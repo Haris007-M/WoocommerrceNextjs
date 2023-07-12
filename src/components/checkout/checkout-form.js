@@ -109,6 +109,8 @@ const CheckoutForm = ( { countriesData } ) => {
 		// For stripe payment mode, handle the strip payment and thank you.
 		if ( 'stripe' === input.paymentMethod ) {
 			const createdOrderData = await handleStripeCheckout( input, cart?.cartItems, setRequestError, setCart, setIsOrderProcessing, setCreatedOrderData );
+			// window.location.href = createdOrderData.paymentUrl;
+			console.log("createdOrderData" ,createdOrderData);
 			return null;
 		}
 		

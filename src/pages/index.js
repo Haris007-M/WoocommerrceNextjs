@@ -7,6 +7,7 @@ import {
   HEADER_FOOTER_ENDPOINT,
 } from "@/utils/constants/endpoints";
 import Products from "@/components/products";
+import { getProductsData } from "@/utils/products";
 
 export default function Home({ data, productsData }) {
   //   const { header, footer } = data || {};
@@ -28,7 +29,7 @@ export default function Home({ data, productsData }) {
 
 export async function getStaticProps() {
   const { data } = await axios.get(HEADER_FOOTER_ENDPOINT);
-  const { data: productsData } = await axios.get(GET_PRODUCTS_ENDPOINT);
+  const { data: productsData } = await getProductsData();
 
   return {
     props: {

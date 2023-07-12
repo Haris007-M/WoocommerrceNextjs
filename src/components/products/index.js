@@ -11,8 +11,8 @@ const Products = ({ productsData }) => {
   return (
     <>
       <div className="flex flex-wrap -mx-2 overflow-hidden">
-        {productsData.products.length
-          ? productsData.products.map((product) => {
+        {productsData.length
+          ? productsData.map((product) => {
               return (
                 <Product key={ product?.id } product={product} />
               );
