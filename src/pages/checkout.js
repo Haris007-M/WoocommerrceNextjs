@@ -9,6 +9,7 @@ export default function Checkout({ data, countries }) {
 	return (
 		<Layout data={data || {}}>
 			<h1>Checkout</h1>
+			<p>you can checkout</p>
 			<CheckoutForm countriesData={countries}/>
 		</Layout>
 	);
