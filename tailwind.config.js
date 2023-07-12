@@ -1,7 +1,9 @@
 module.exports = {
-	purge: [
-		'./src/components/**/*.js',
-		'./pages/**/*.js'],
+	content: [
+		// Example content paths...
+		'./public/**/*.html',
+		'./src/**/*.{js,jsx,ts,tsx,vue}',
+	  ],
 	theme: {
 		extend: {
 			colors: {
