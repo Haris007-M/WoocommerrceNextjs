@@ -1,4 +1,4 @@
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import { HEADER_FOOTER_ENDPOINT } from '../utils/constants/endpoints';
 import axios from 'axios';
 import { WOOCOMMERCE_COUNTRIES_ENDPOINT } from '../utils/constants/endpoints';
