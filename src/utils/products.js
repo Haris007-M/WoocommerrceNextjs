@@ -26,11 +26,11 @@ export const getProductsData = async ( perPage = 50 ) => {
  *
  * @return {Promise<void>}
  */
-export const getProductBySlug = async ( productSlug = '' ) => {
-	return await api.get(
-		'products',
-		{
-			slug: productSlug,
-		},
-	);
-};
+// export const getProductBySlug = async ( productSlug = '' ) => {
+// 	return await api.get(
+// 		'products',
+// 		{
+// 			slug: productSlug,
+// 		},
+// 	);
+// };
