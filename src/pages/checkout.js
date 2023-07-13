@@ -17,7 +17,7 @@ export default function Checkout({ data, countries }) {
 
 export async function getStaticProps() {
 	
-	const { data } = await axios.get( HEADER_FOOTER_ENDPOINT );
+	const { data } = await axios.get( 'https://mydemo.codeytek.com/wp-json/rae/v1/header-footer?header_location_id=hcms-menu-header&footer_location_id=hcms-menu-footer' );
 	const {data : countries } = await axios.get( WOOCOMMERCE_COUNTRIES_ENDPOINT );
 	return {
 		props: {
