@@ -3,7 +3,6 @@ import axios from "axios";
 
 import Layout from "../components/Layout";
 import {
-  GET_PRODUCTS_ENDPOINT,
   HEADER_FOOTER_ENDPOINT,
 } from "@/utils/constants/endpoints";
 import Products from "@/components/products";
