@@ -15,7 +15,7 @@ export default function Cart({ data }) {
 
 export async function getStaticProps() {
 	
-	const { data } = await axios.get( HEADER_FOOTER_ENDPOINT );
+	const { data } = await axios.get('http://localhost/wstekh/wp-json/rae/v1/header-footer?header_location_id=hcms-menu-header&footer_location_id=hcms-menu-footer');
 	
 	return {
 		props: {
